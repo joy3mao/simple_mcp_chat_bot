@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "puppeteer": {
+			"command": "npx",
+			"args": ["-y", "@modelcontextprotocol/server-puppeteer"],
+			"disabled": false
+		},
+        "custom_server_sse": {
+            "sseUrl": "http://127.0.0.1:5000/sse",
+            "disabled": false
+        },
+        "custom_server_sh": {
+            "streamableHttpUrl": "http://127.0.0.1:5000/mcp",
+            "disabled": false
+	    }
+    }
+}
