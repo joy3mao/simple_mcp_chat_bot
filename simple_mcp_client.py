@@ -90,10 +90,6 @@ class Configuration:
         self.open_proxy = os.getenv("OPEN_PROXY",None) or None
         self.deepseek_api_key = os.getenv("DEEPSEEK_API_KEY","*****")
         self.deepseek_proxy = os.getenv("DEEPSEEK_PROXY",None) or None
-        self.fosp_open_id= os.getenv("FOSP_OPEN_ID","*****")
-        self.fosp_developer_secret = os.getenv("FOSP_DEVELOPER_SECRET","*****")
-        self.fosp_encode_key = os.getenv("FOSP_ENCODE_KEY","*****")
-        self.fosp_proxy = os.getenv("FOSP_PROXY",None) or None
 
     @staticmethod
     def load_env() -> None:
@@ -1047,4 +1043,5 @@ async def main() -> None:
 
 
 if __name__ == "__main__":
+
     asyncio.run(main())
